@@ -1,0 +1,39 @@
+{
+  "name": "notamedia/nota.tools",
+  "description": "Расширение возможностей платформы 1С-Битрикс. Минимальная версия 16.5.0, рекомендуется использовать с версии 17.5.2",
+  "homepage": "https://gitl.notamedia.ru/tools/nota.tools",
+  "type": "bitrix-module",
+  "license": "MIT",
+  "keywords": [
+    "bitrix",
+    "notamedia",
+    "log",
+    "cache",
+    "utils"
+  ],
+  "authors": [
+    {
+      "name": "Sergey Frolov",
+      "email": "s.frolov@notamedia.ru"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "NotaTools\\": "lib/"
+    }
+  },
+  "require": {
+    "php": ">=7.2 <8.1",
+
+    "symfony/console": "5.4.32",
+    "rakit/validation": "^1.2",
+    "doctrine/collections": "^1.4",
+    "psr/log": "^1.1.0",
+    "monolog/monolog": "^1.25.1",
+    "telegram-bot/api": "2.3.13",
+
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "minimum-stability": "stable"
+}
